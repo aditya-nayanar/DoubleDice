@@ -36,16 +36,17 @@ private static final Random random = new Random();
         final ImageView imageTwo = findViewById(R.id.imageTwo);
 
 
-        Button roll = findViewById(R.id.roll);
+        final Button roll = findViewById(R.id.roll);
         roll.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+                roll.setVisibility(View.INVISIBLE);
                 prepareDice(imageOne);
                 prepareDice(imageTwo);
                 Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
                     public void run() {
                         rollDice(sum, diceOne, diceTwo, imageOne, imageTwo);
+                        roll.setVisibility(View.VISIBLE);
                     }
                 }, 1500);
 
