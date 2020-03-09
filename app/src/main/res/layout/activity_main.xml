@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCC84F"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageTwo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="48dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/roll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="210dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/atma_light"
+        android:text="Double Dice"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:text="Roll"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/titleSum"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/atma_light"
+        android:text="Total"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/roll"
+        app:layout_constraintStart_toStartOf="@+id/roll"
+        app:layout_constraintTop_toBottomOf="@+id/roll" />
+
+    <TextView
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/titleSum"
+        app:layout_constraintStart_toStartOf="@+id/titleSum"
+        app:layout_constraintTop_toBottomOf="@+id/titleSum"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <TextView
+        android:id="@+id/diceOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="-"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageOne"
+        app:layout_constraintStart_toStartOf="@+id/imageOne"
+        app:layout_constraintTop_toBottomOf="@+id/imageOne" />
+
+    <TextView
+        android:id="@+id/diceTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="-"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageTwo"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/imageTwo"
+        app:layout_constraintTop_toBottomOf="@+id/imageTwo" />
+
+    <ImageView
+        android:id="@+id/imageOne"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="48dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/roll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.435" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
