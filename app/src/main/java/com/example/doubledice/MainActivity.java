@@ -40,6 +40,9 @@ private static final Random random = new Random();
         roll.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 roll.setVisibility(View.INVISIBLE);
+                diceOne.setText("-");
+                diceTwo.setText("-");
+                sum.setText("-");
                 prepareDice(imageOne);
                 prepareDice(imageTwo);
                 Handler handler = new Handler();
